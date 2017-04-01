@@ -115,21 +115,12 @@ footer #creator {
 	padding: -50px 0 50px 0;
 }
 
-a:hover {
-	color: navy;
-}
-
 @media screen and (min-width:768px) {
     .brand {
 	display: inherit;
 	margin: 0;
 	padding: 30px 0 10px;
 	text-align: center;
-	font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-family: 'Nova Round', cursive;
-	font-family: "Fascinate Inline", Helvetica, Arial, sans-serif;
-	font-family: "Stony Island NF";
-	src: url('../fonts/StonyIslandNF.ttf') format("truetype");
 	font-family: "Bardo"; 
 	font-size: 5.5em;
 	font-weight: 700;
@@ -137,8 +128,6 @@ a:hover {
 	background: #fff;
 	background: rgba(255,255,255,0.9);
 	color: black;
-	/*text-shadow: -1px -1px 0 #11375C;*/
-	/*-webkit-text-stroke: 1.5px #11375C;*/
     }
 	
 	.brand .img-responsive {
@@ -185,7 +174,7 @@ a:hover {
     }
 
     .nav>li>a {
-        padding: 35px;
+        padding: 25px;
     }
 
     .navbar-nav>li>a {
