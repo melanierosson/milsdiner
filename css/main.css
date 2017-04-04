@@ -60,7 +60,11 @@ hr {
 }
 
 .brand-before {
-    margin: 15px 0;
+    text-transform: uppercase;
+    font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14pt;
+	margin: 25px 0 10px 0;
+	opacity: 0.8;
 }
 
 .brand-name {
