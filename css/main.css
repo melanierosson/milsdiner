@@ -76,8 +76,6 @@ hr {
 	font-family: 'Bardo',Helvetica,Arial,sans-serif;
 }
 
-
-
 .tagline-divider {
     margin: 15px auto 3px;
     max-width: 250px;
@@ -137,7 +135,6 @@ footer #creator {
     opacity: 0.7;
 	text-decoration: none;
 }
-
 .fa-facebook {
     background: #3B5998;
     color: white;
@@ -152,6 +149,14 @@ footer #creator {
 }
 .fa-instagram:hover {
     color: #125688;
+    background: white;
+}
+.fa-yelp {
+    background: red;
+    color: white;
+}
+.fa-yelp:hover {
+    color: red;
     background: white;
 }
 
