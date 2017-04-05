@@ -31,6 +31,11 @@ hr {
     border-color: #999999;
 }
 
+@font-face {
+    font-family: 'Bardo';
+    src: url('../fonts/Bardo.ttf') format('truetype');
+}
+
 .brand,
 .address-bar {
     display: none;
@@ -54,9 +59,7 @@ hr {
 
 .brand-before,
 .brand-name {
-    text-transform: capitalize;
-	font-family: "Bardo";
-	src: url('../fonts/Bardo.ttf') format("truetype");
+    text-transform: capitalize;	
 }
 
 .brand-before {
@@ -70,7 +73,10 @@ hr {
 .brand-name {
     margin: 0;
     font-size: 4em;
+	font-family: 'Bardo',Helvetica,Arial,sans-serif;
 }
+
+
 
 .tagline-divider {
     margin: 15px auto 3px;
@@ -155,7 +161,7 @@ footer #creator {
 	margin: 0;
 	padding: 30px 0 10px;
 	text-align: center;
-	font-family: "Bardo"; 
+	font-family: Bardo; 
 	font-size: 5.5em;
 	font-weight: 700;
 	line-height: normal;
