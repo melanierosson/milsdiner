@@ -20,6 +20,38 @@ h6 {
     letter-spacing: 1px;
 }
 
+h2 #news1, #news2 {
+	padding: 0;
+	margin: 0 12px;
+	height:25px;
+}
+#news {
+	font-weight: bold;
+	color:red;
+	animation-duration: 400ms;
+   	animation-name: blink;
+   	animation-iteration-count: infinite;
+   	animation-direction: alternate;
+}
+
+@keyframes blink {
+  from {
+    text-shadow: 3px 3px yellow;
+	color:orange;
+  }
+  to {
+    text-shadow: none;
+  }
+}
+
+.blink {
+    -webkit-animation: blink 1s 3 alternate;
+    -moz-animation: blink 1s 3 alternate;  
+    -ms-animation: blink 1s 3 alternate;  
+    -o-animation: blink 1s 3 alternate;  
+    animation: blink 1s 3 alternate;   
+ }
+
 p {
     font-size: 1.25em;
     line-height: 1.6;
@@ -277,7 +309,7 @@ footer #creator {
         table-layout: fixed;
         font-size: 1.25em;
     }
-	
+		
 }
 
 @media screen and (min-width:1200px) {
