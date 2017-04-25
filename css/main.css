@@ -75,7 +75,7 @@ hr {
 
 .navbar-brand {
     text-transform: uppercase;
-    font-weight: 900;
+    font-weight: bold;
     letter-spacing: 2px;
 	font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
@@ -150,7 +150,6 @@ footer #copyright {
     padding: 2px 0 2px 0;
 	font-size: 9pt;
 	font-weight: bold;
-	font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 footer #creator {
 	font-size: 8pt;
