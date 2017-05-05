@@ -162,6 +162,7 @@ footer #creator {
     text-align: center;
     text-decoration: none;
 	margin: 10px 0 0 0;
+	border-radius: 15px;
 }
 .fa:link {
     padding: 10px;
@@ -170,11 +171,13 @@ footer #creator {
     text-align: center;
     text-decoration: none;
 	margin: 10px 0 0 0;
+	border-radius: 15px;
 }
 
 .fa:hover {
     opacity: 0.7;
 	text-decoration: none;
+	border-radius: 15px;
 }
 .fa-facebook {
     background: #3B5998;
