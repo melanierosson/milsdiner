@@ -33,6 +33,9 @@ h2 #news1, #news2 {
    	animation-iteration-count: infinite;
    	animation-direction: alternate;
 }
+#carousel-example-generic {
+    margin:5px auto auto auto;
+}
 
 @keyframes blink {
   from {
@@ -84,6 +87,11 @@ hr {
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 3px;
+    text-align:right;
+}
+
+.navbar-nav>li>a:hover, .nav>li>a:hover {
+    color:#476aa1 !important;
 }
 
 .img-full {
@@ -116,10 +124,11 @@ hr {
 }
 
 .box {
-    margin-bottom: 20px;
-    padding: 30px 15px;
+    padding: 20px 15px;
     background: #fff;
     background: rgba(255,255,255,0.9);
+    max-width:750px;
+    margin:0 auto 20px auto;
 }
 
 .intro-text {
@@ -153,6 +162,7 @@ hr {
 footer {
     background: #fff;
     background: rgba(255,255,255,0.9);
+    padding:10px;
 }
 
 footer #copyright {
@@ -254,7 +264,7 @@ footer #creator {
     .brand {
 	display: inherit;
 	margin: 0;
-	padding: 30px 0 10px;
+	padding: 30px 0 5px;
 	text-align: center;
 	font-family: Bardo;
 	font-size: 5.5em;
@@ -281,7 +291,7 @@ footer #creator {
     .address-bar {
 	display: inherit;
 	margin: 0;
-	padding: 0 0 40px;
+	padding: 10px 0 10px;
 	text-align: center;
 	text-shadow: 2px 1px 2px rgba(255,255,255,1.00);
 	text-transform: uppercase;
@@ -309,19 +319,19 @@ footer #creator {
     }
 
     .nav>li>a {
-        padding: 25px;
+        padding: 15px 29.5px;
     }
 
     .navbar-nav>li>a {
         line-height: normal;
     }
-
     .navbar-nav {
         display: table;
         float: none;
         margin: 0 auto;
         table-layout: fixed;
         font-size: 1.25em;
+        text-align:default;
     }
 
 }
