@@ -1,171 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Mil's Diner in Milpitas Homepage">
-    <meta name="author" content="Melanie Panem">
-
-    <title>Mil's Diner</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Social Media -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- Custom CSS -->
-    <link href="css/main.css" rel="stylesheet">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- Favicon -->
-    <link rel="icon" href="img/favicon.png">
-
-</head>
-
-<body>
-
-    <div class="brand">
-        Mil's Diner
-    </div>
-    <div class="address-bar">36 S. ABBOTT AVE | MILPITAS, CA 95035 | (408) 946-4773</div>
-
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Mil's Diner</a>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Mil's Diner Family Restaurant Website" />
+        <meta name="author" content="Melanie Panem" />
+        <title>Mil's Diner</title>
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- Custom CSS -->
+        <link href="css/lightbox-modal.css" rel="stylesheet" />
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"/>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bottom-border bg-white text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">Mil's Diner</a><button class="navbar-toggler navbar-toggler-right text-uppercase hamburger-bordered" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3  js-scroll-trigger" href="#about">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3  js-scroll-trigger" href="#menu">Menu</a></li>
+                        <!-- <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3  js-scroll-trigger" href="#awards">Awards</a></li> -->
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3  js-scroll-trigger" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="menu.html">Menu</a>
-                    </li>
-                    <li>
-                        <a href="awards.html">Awards</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
+        </nav>
+        <!-- Masthead Logo -->
+        <header class="masthead text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <img class="masthead-avatar" src="assets/img/menu-logo-03-600x532.png" alt="Mil's Diner Main Logo" />
             </div>
-        </div>
-    </nav>
+        </header>
+        <!-- Pretty Pictures -->
+        <section class="hero-image-row container text-center center mb-4 mt-n5">
+        <!-- Food/About images used to open the lightbox -->
+            <div class="row text-center center circle-food-row">
+              <div class="col-lg-2 col column text-center clip-circle-container">
+                <img src="assets/img/food/avo-omelet.jpeg" onclick="openModalFood();currentSlideFood(1)" class="hover-shadow initial-images clip-circle">
+              </div>
+              <div class="col-lg-2 col column text-center clip-circle-container">
+                <img src="assets/img/food/friedchicken-waffle.JPG" onclick="openModalFood();currentSlideFood(2)" class="hover-shadow initial-images clip-circle">
+              </div>
+              <div class="col-lg-2 col column text-center clip-circle-container">
+                <img src="assets/img/food/salsa-omelet.JPG" onclick="openModalFood();currentSlideFood(3)" class="hover-shadow initial-images clip-circle">
+              </div>
+              <div class="col-lg-2 col column text-center clip-circle-container">
+                <img src="assets/img/other/fambam.JPG" onclick="openModalFood();currentSlideFood(4)" class="hover-shadow initial-images clip-circle">
+              </div>
+              <div class="col-lg-2 col column text-center clip-circle-container">
+                <img src="assets/img/other/newspaper.JPG" onclick="openModalFood();currentSlideFood(5)" class="hover-shadow initial-images clip-circle">
+              </div>
+              <div class="col-lg-2 col column text-center clip-circle-container">
+                <img src="assets/img/other/awards-lineup.JPG" onclick="openModalFood();currentSlideFood(6)" class="hover-shadow initial-images clip-circle">
+              </div>
+            </div>
+            <!-- Food/About Modal/Lightbox -->
+            <div id="myModalFood" class="modal">
+              <span class="close cursor" onclick="closeModalFood()">&times;</span>
+              <div class="modal-content">
 
-    <div class="container">
+                <div class="mySlidesFood text-center">
+                  <div class="numbertext">1 / 6</div>
+                  <img src="assets/img/food/avo-omelet.jpeg" class="large-slides clipped-slides">
+                </div>
 
-        <div class="row">
-            <div class="box">
-                <div class="col-lg-12 text-center">
-                    <!-- <div id="carousel-example-generic" class="carousel slide">
-                        <ol class="carousel-indicators hidden-xs">
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-                        </ol>
+                <div class="mySlidesFood text-center">
+                  <div class="numbertext">2 / 6</div>
+                  <img src="assets/img/food/friedchicken-waffle.JPG" class="large-slides clipped-slides">
+                </div>
 
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <img class="img-responsive img-full" src="img/meditomelet.jpg" alt="Mediterranean Omelette">
-                            </div>
-                            <div class="item">
-                                <img class="img-responsive img-full" src="img/chickenandwaffle.jpg" alt="Chicken and Waffle">
-                            </div>
-                            <div class="item">
-                                <img class="img-responsive img-full" src="img/baby.jpg" alt="Our Favorite Customers"></div>
-                            <div class="item">
-                                <img class="img-responsive img-full" src="img/mimosa.jpg" alt="Mimosa">
-                            </div>
+                <div class="mySlidesFood text-center">
+                  <div class="numbertext">3 / 6</div>
+                  <img src="assets/img/food/salsa-omelet.JPG" class="large-slides clipped-slides">
+                </div>
+
+                <div class="mySlidesFood text-center">
+                  <div class="numbertext">4 / 6</div>
+                  <img src="assets/img/other/fambam.JPG" class="large-slides clipped-slides">
+                </div>
+
+                <div class="mySlidesFood text-center">
+                  <div class="numbertext">5 / 6</div>
+                  <img src="assets/img/other/newspaper.JPG" class="large-slides clipped-slides">
+                </div>
+
+                <div class="mySlidesFood text-center">
+                  <div class="numbertext">6 / 6</div>
+                  <img src="assets/img/other/awards-lineup.JPG" class="large-slides clipped-slides">
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlidesFood(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlidesFood(1)">&#10095;</a>
+
+                <!-- Caption text -->
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+
+                <!-- Food/About thumbnail image controls -->
+                <div class="row text-center center">
+                    <div class="col-xs-2 col thumbnails-col column">
+                      <img class="thumbnails demo clip-square" src="assets/img/food/avo-omelet.jpeg" onclick="currentSlideFood(1)" alt="Avocado Topped Omelet and Hashbrowns">
+                    </div>
+
+                    <div class="col-xs-2 col thumbnails-col column">
+                      <img class="thumbnails demo clip-square" src="assets/img/food/friedchicken-waffle.JPG" onclick="currentSlideFood(2)" alt="Chicken and Waffles">
+                    </div>
+
+                    <div class="col-xs-2 col thumbnails-col column">
+                      <img class="thumbnails demo clip-square" src="assets/img/food/salsa-omelet.JPG" onclick="currentSlideFood(3)" alt="Salsa Topped Omelet and Potatoes">
+                    </div>
+
+                    <div class="col-xs-2 col thumbnails-col column">
+                      <img class="thumbnails portrait demo clip-square" src="assets/img/other/fambam.JPG" onclick="currentSlideFood(4)" alt="Mil's Diner Family: The Perivoliotis">
+                    </div>
+
+                    <div class="col-xs-2 col thumbnails-col column">
+                      <img class="thumbnails portrait demo clip-square" src="assets/img/other/newspaper.JPG" onclick="currentSlideFood(5)" alt="Newspaper Clipping">
+                    </div>
+
+                    <div class="col-xs-2 col thumbnails-col column">
+                      <img class="thumbnails demo clip-square" src="assets/img/other/awards-lineup.JPG" onclick="currentSlideFood(6)" alt="A Small Portion of the Awards Lineup">
+                    </div>
+                </div>
+
+              </div>
+            </div>
+        </section>
+        <!-- About Section-->
+        <section class="page-section mb-0 mt-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-5">About</h2>
+                <!-- About Section Content-->
+                <div class="row">
+                    <div class="col-lg-4 ml-auto">
+                        <p class="lead">
+                            Mil's Diner has been a staple for South Bay Area brunch enthusiasts for over 20 years. With their focus on quality food and maintaining an enjoyable family atmosphere, it is a prime spot to have a relaxing meal in the morning or afternoon.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 mr-auto">
+                        <p class="lead">
+                            Their chefs have mastered a large menu that has everyones' favorite Greek and American dishes. <br/><br/><span class="font-weight-bold">They won <a href="http://www.bestofmilpitas.com/?page_id=132" target="_blank">Best of Milpitas Breakfast</a> for the 26th year in a row in 2019!</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Menu Section-->
+        <section class="page-section menu" id="menu">
+            <div class="container">
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-5">Menu</h2>
+                <!-- Menu images used to open the lightbox -->
+                <div class="row text-center center">
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 column text-center">
+                    <img src="assets/img/menus/menu1.jpg" onclick="openModalMenu();currentSlideMenu(1)" class="hover-shadow initial-images">
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 column text-center">
+                    <img src="assets/img/menus/menu2.jpg" onclick="openModalMenu();currentSlideMenu(2)" class="hover-shadow initial-images">
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 column text-center">
+                    <img src="assets/img/menus/menu3.jpg" onclick="openModalMenu();currentSlideMenu(3)" class="hover-shadow initial-images">
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 column text-center">
+                    <img src="assets/img/menus/menu4.jpg" onclick="openModalMenu();currentSlideMenu(4)" class="hover-shadow initial-images">
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 column text-center">
+                    <img src="assets/img/menus/specials3.jpg" onclick="openModalMenu();currentSlideMenu(5)" class="hover-shadow initial-images">
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 column text-center">
+                    <img src="assets/img/menus/specials1.jpg" onclick="openModalMenu();currentSlideMenu(6)" class="hover-shadow initial-images">
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 column text-center">
+                    <img src="assets/img/menus/specials2.jpg" onclick="openModalMenu();currentSlideMenu(7)" class="hover-shadow initial-images">
+                  </div>
+                </div>
+                <!-- Menu Modal/Lightbox -->
+                <div id="myModalMenu" class="modal">
+                  <span class="close cursor" onclick="closeModalMenu()">&times;</span>
+                  <div class="modal-content">
+
+                    <div class="mySlidesMenu text-center">
+                      <div class="numbertext">1 / 7</div>
+                      <img src="assets/img/menus/menu1.jpg" class="large-slides">
+                    </div>
+
+                    <div class="mySlidesMenu text-center">
+                      <div class="numbertext">2 / 7</div>
+                      <img src="assets/img/menus/menu2.jpg" class="large-slides">
+                    </div>
+
+                    <div class="mySlidesMenu text-center">
+                      <div class="numbertext">3 / 7</div>
+                      <img src="assets/img/menus/menu3.jpg" class="large-slides">
+                    </div>
+
+                    <div class="mySlidesMenu text-center">
+                      <div class="numbertext">4 / 7</div>
+                      <img src="assets/img/menus/menu4.jpg" class="large-slides">
+                    </div>
+
+                    <div class="mySlidesMenu text-center">
+                      <div class="numbertext">5 / 7</div>
+                      <img src="assets/img/menus/specials3.jpg" class="large-slides">
+                    </div>
+
+                    <div class="mySlidesMenu text-center">
+                      <div class="numbertext">6 / 7</div>
+                      <img src="assets/img/menus/specials1.jpg" class="large-slides">
+                    </div>
+
+                    <div class="mySlidesMenu text-center">
+                      <div class="numbertext">7 / 7</div>
+                      <img src="assets/img/menus/specials2.jpg" class="large-slides">
+                    </div>
+
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlidesMenu(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlidesMenu(1)">&#10095;</a>
+
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                      <p id="caption"></p>
+                    </div>
+
+                    <!-- Menu thumbnail image controls -->
+                    <div class="thumbnails-col-menu column">
+                      <img class="thumbnails demo" src="assets/img/menus/menu1.jpg" onclick="currentSlideMenu(1)" alt="Menu Cover">
+                    </div>
+
+                    <div class="thumbnails-col-menu column">
+                      <img class="thumbnails demo" src="assets/img/menus/menu2.jpg" onclick="currentSlideMenu(2)" alt="Lunch and Sides">
+                    </div>
+
+                    <div class="thumbnails-col-menu column">
+                      <img class="thumbnails demo" src="assets/img/menus/menu3.jpg" onclick="currentSlideMenu(3)" alt="Breakfast and Children's Meals">
+                    </div>
+
+                    <div class="thumbnails-col-menu column">
+                      <img class="thumbnails demo" src="assets/img/menus/menu4.jpg" onclick="currentSlideMenu(4)" alt="All Day Breakfast">
+                    </div>
+
+                    <div class="thumbnails-col-special column">
+                      <img class="thumbnails demo" src="assets/img/menus/specials3.jpg" onclick="currentSlideMenu(5)" alt="Breakfast Specials">
+                    </div>
+
+                    <div class="thumbnails-col-special column">
+                      <img class="thumbnails demo" src="assets/img/menus/specials1.jpg" onclick="currentSlideMenu(6)" alt="Lunch Specials">
+                    </div>
+
+                    <div class="thumbnails-col-special column">
+                      <img class="thumbnails demo" src="assets/img/menus/specials2.jpg" onclick="currentSlideMenu(7)" alt="Weekend Specials">
+                    </div>
+                  </div>
+                </div>
+                    
+            </div>
+        </section>
+        <!-- Awards Section-->
+       <!--  <section class="page-section mb-0" id="awards">
+            <div class="container">
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-5">Awards</h2>
+                
+            </div>
+        </section> -->
+        <!-- Contact Section-->
+        <section class="page-section mb-0" id="contact">
+            <div class="container">
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-5">Contact</h2>
+                <div class="row">
+                    <div class="col-sm-12 mx-auto">
+                        <h3 class="text-80-primary text-center text-uppercase mb-3">Hours</h3>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mb-5 mb-lg-0 text-center">
+                        <div class="border-90-secondary contact-boxes py-4">
+                            <h4 class="text-uppercase mb-4">Sunday</h4>
+                            <p class="lead mb-0">7:00 am - 3:00 pm</p>
                         </div>
-
-                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                            <span class="icon-prev"></span>
-                        </a>
-                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                            <span class="icon-next"></span>
-                        </a>
-                    </div> -->
-                    <p>Although we are not open during the pandemic lockdown, we will be doing takeout orders for Mother's Day. Please see our pickup options below.</p>
-                    <img class="img-responsive img-full" src="img/menu-horizontal.png">
-                    <h2 class="brand-before">
-                        Welcome to
-                    </h2>
-                    <h1 class="brand-name">Mil's Diner</h1>
-                    <hr class="tagline-divider">
-                    <h2>
-                        <small>By The
-                            <strong>Perivoliotis Family</strong>
-                        </small>
-                    </h2>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mb-5 mb-lg-0 text-center">
+                        <div class="border-90-secondary contact-boxes py-4">
+                            <h4 class="text-uppercase mb-4">Monday - Friday</h4>
+                            <p class="lead mb-0">5:30 am - 3:00 pm</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <div class="border-90-secondary contact-boxes py-4">
+                            <h4 class="text-uppercase mb-4">Saturday</h4>
+                            <p class="lead mb-0">6:00 am - 3:00 pm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 mb-4">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 mx-auto">
+                        <h3 class="text-80-primary text-center text-uppercase mb-3">
+                            Details
+                        </h3>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mb-5 mb-lg-0 text-center">
+                        <div class="border-90-secondary contact-boxes py-3">
+                            <h4 class="text-uppercase mb-4">Location</h4>
+                            <p class="lead mb-0">36 South Abbott Avenue<br />Milpitas, CA 95035</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mb-5 mb-lg-0 text-center">
+                        <div class="border-90-secondary contact-boxes py-3">
+                            <h4 class="text-uppercase mb-4">Follow</h4>
+                            <a class="btn btn-outline-light btn-social mx-1" href="https://facebook.com/milsdiner" target="_blank"><i class="fab fa-fw fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social mx-1" href="https://www.yelp.com/biz/mils-diner-milpitas" target="_blank"><i class="fab fa-fw fa-yelp"></i></a>
+                            <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/milsdiner" target="_blank"><i class="fab fa-fw fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <div class="border-90-secondary contact-boxes py-3">
+                            <h4 class="text-uppercase mb-4">Phone/Email</h4>
+                            <p class="lead mb-0">
+                                (408) 946-4773<br />
+                                <a href="mailto:milsdinerinc@gmail.com">milsdinerinc@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
+        <!-- Copyright Section-->
+        <section class="copyright py-4 text-center text-uppercase">
+            <div class="container"><small>© MIL'S DINER 2020 &nbsp; | &nbsp; <a href="http://melanielynnpanem.com" target="_blank">melp</a> designs</small></div>
+        </section>
+        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
+        <div class="scroll-to-top d-lg-none position-fixed">
+            <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
         </div>
 
-        <div class="row">
-        	<div class="box">
-                <div class="col-lg-12">
-                    <hr>
-                    <h2 id="news" class="intro-text text-center">
-                    	<img id="news1" src="img/newsSide1.png">NEWS<img id="news2" src="img/newsSide2.png">
-                    </h2>
-                    <hr>
-                    <p align="center">We won <strong><a href="http://www.bestofmilpitas.com/">Best of Milpitas</a> Breakfast</strong> for the <strong>26th year in a row</strong> in 2019!</p>
-                </div>
-            </div>
-            <div class="box">
-                <div class="col-lg-12">
-                    <hr>
-                    <h2 class="intro-text text-center">
-                    	Classic <strong>Family</strong> Restaurant
-                    </h2>
-                    <hr>
-                    <p align="center">Mil's Diner has been a staple for south bay brunch enthusiasts for over 20 years. With their focus on quality food and maintaining an enjoyable family atmosphere, it is a prime spot to have a relaxing meal in the morning or afternoon. Mil's chefs have mastered a large menu that has everyones' favorite American and Greek dishes.</p>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                	<p id="social"><a target="_blank" href="https://www.facebook.com/milsdiner" class="fa fa-facebook"></a> <a target="_blank" href="https://www.instagram.com/milsdiner/" class="fa fa-instagram"></a>  <a target="_blank" href="https://www.yelp.com/biz/mils-diner-milpitas" class="fa fa-yelp"></a></p>
-                    <p id="copyright">&copy; MIL'S DINER</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Script to Activate the Carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
-    </script>
-
-</body>
-
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Contact form JS-->
+        <script src="assets/mail/jqBootstrapValidation.js"></script>
+        <script src="assets/mail/contact_me.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- Custom JS-->
+        <script src="js/lightbox-modal.js"></script>
+        
+    </body>
 </html>
