@@ -153,8 +153,8 @@
   .clip-square {
     max-height:130px;
   }
-  div.mySlidesFood img.large-slides {
-    max-height:80vh;
+  img.large-slides {
+    max-height:60vh;
     margin: 0 auto;
   }
 }
