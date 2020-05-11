@@ -25,7 +25,7 @@
   overflow: auto;
   background-color: rgba(0,0,0,0.8);
 }
-#myModalMenu {
+#myModalMenu, #myModalFood {
   padding-bottom:15px;
 }
 
@@ -66,7 +66,7 @@
   margin:auto auto;
 }
 .large-slides {
-  max-height:70vh;
+  max-height:65vh;
   margin: 0 auto;
 }
 .clipped-slides {
