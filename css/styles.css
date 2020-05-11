@@ -10239,6 +10239,7 @@ h3 {
   color: #980f61;
   opacity: 1;
 }*/
+
 @media (max-width: 991px) {
   .about-left {
     border-top: 0.125rem solid rgba(152,15,97,0.9);
