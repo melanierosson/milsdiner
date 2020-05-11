@@ -10155,6 +10155,7 @@ h3 {
 .masthead {
   padding-top: calc(6rem);
   padding-bottom: 6rem;
+  /*background: white url('assets/img/food/avo-omelet.jpeg') center/cover no-repeat scroll;*/
 }
 .masthead .masthead-heading {
   font-size: 2.75rem;
