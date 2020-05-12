@@ -10330,7 +10330,7 @@ h3 {
     max-height:630px;
   }
   .carousel-item img {
-    margin-left:-160px !important;
+    margin-left:-120px !important;
     max-height:630px;
   }
   .hero-image-row {
@@ -10352,6 +10352,11 @@ h3 {
   #carousel-prev,
   #carousel-next {
     opacity:0;
+  }
+}
+@media (max-width: 399px) {
+  .carousel-item img {
+    margin-left:-80px !important;
   }
 }
 
