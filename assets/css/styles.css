@@ -10349,6 +10349,10 @@ h3 {
   .hide-on-sm {
     display:none;
   }
+  #carousel-prev,
+  #carousel-next {
+    opacity:0;
+  }
 }
 
 
