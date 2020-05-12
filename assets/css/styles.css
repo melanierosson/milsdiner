@@ -5834,8 +5834,7 @@ a.close.disabled {
 
 #thumbslide1:hover, 
 #thumbslide2:hover,
-#thumbslide3:hover,
-#thumbslide4:hover {
+#thumbslide3:hover {
   cursor:pointer;
 }
 
@@ -10226,10 +10225,6 @@ h3 {
 .carousel-item {
   background-color:#FFF;
 }
-#carousel-prev,
-#carousel-next {
-  display:none;
-}
 
 /* HERO CAROUSEL MEDIA QUERIES */
 @media (min-width: 1500px) {
@@ -10241,15 +10236,6 @@ h3 {
   .carousel-item img {
     margin-top:-60px;
     min-width:100vw;
-  }
-  #carousel-container.mobile {
-    display:none;
-  }
-  #carousel-container.desktop {
-    display:inline-block;
-  }
-  #thumbslide-container-4 {
-    display:none;
   }
   .masthead .masthead-avatar {
     height: 350px;
@@ -10272,15 +10258,6 @@ h3 {
   .carousel-item img {
     margin-top:-60px;
     min-width:100vw;
-  }
-  #carousel-container.mobile {
-    display:none;
-  }
-  #carousel-container.desktop {
-    display:inline-block;
-  }
-  #thumbslide-container-4 {
-    display:none;
   }
   .hero-image-row {
     top:570px;
@@ -10305,15 +10282,6 @@ h3 {
   }
   .carousel-item img {
     margin-left:-60px;
-  }
-  #carousel-container.mobile {
-    display:none;
-  }
-  #carousel-container.desktop {
-    display:inline-block;
-  }
-  #thumbslide-container-4 {
-    display:none;
   }
   .hero-image-row {
     top:570px;
@@ -10340,15 +10308,6 @@ h3 {
     margin-left:-74px;
     max-height:630px;
   }
-  #carousel-container.mobile {
-    display:none;
-  }
-  #carousel-container.desktop {
-    display:inline-block;
-  }
-  #thumbslide-container-4 {
-    display:none;
-  }
   .hero-image-row {
     top:570px;
   }
@@ -10374,21 +10333,6 @@ h3 {
     margin-left:-120px !important;
     max-height:630px;
   }
-  #carousel-container.mobile {
-    display:inline-block;
-  }
-  #carousel-container.desktop {
-    display:none;
-  }
-  #thumbslide-container-3 {
-    display:none;
-  }
-  #slide3 {
-    display:block;
-  }
-  #thumbslide-container-4 {
-    display:inline;
-  }
   .hero-image-row {
     top:570px;
   }
@@ -10404,6 +10348,10 @@ h3 {
   }
   .hide-on-sm {
     display:none;
+  }
+  #carousel-prev,
+  #carousel-next {
+    opacity:0;
   }
 }
 @media (max-width: 399px) {

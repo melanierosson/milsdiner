@@ -42,7 +42,7 @@
         <header class="masthead text-center mt-lg-n5">
            <!-- style="background:white url('assets/img/food/avo-omelet.jpeg') center/cover no-repeat scroll;" -->
            <!-- IMAGE SLIDER -->
-            <div id="carousel-container" class="px-0 desktop">
+            <div id="carousel-container" class="px-0">
               <div id="hero-carousel" class="carousel slide" data-ride="carousel">
                   <div class="carousel-inner bg-info" role="listbox">
                       <div class="carousel-item active" id="slide1">
@@ -60,6 +60,11 @@
                               <img src="assets/img/food/friedchicken-waffle.JPG" alt="Fried Chicken and Waffles"/>
                           </div>
                       </div>
+                      <!-- <div class="carousel-item">
+                          <div class="d-flex align-items-center justify-content-center min-vw-100">
+                              <img src="assets/img/food/medit-omelet.jpg" alt="Mediterranean Omelet"/>
+                          </div>
+                      </div> -->
                   </div>
               </div>
 
@@ -71,41 +76,7 @@
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="sr-only">Next</span>
               </a>
-
             </div>
-
-            <div id="carousel-container" class="px-0 mobile">
-              <div id="hero-carousel" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner bg-info" role="listbox">
-                      <div class="carousel-item active" id="slide1">
-                          <div class="d-flex align-items-center justify-content-center min-vw-100">
-                              <img src="assets/img/food/avo-omelet.jpeg" alt="Avocado Topped Omelet"/>
-                          </div>
-                      </div>
-                      <div class="carousel-item" id="slide2">
-                          <div class="d-flex align-items-center justify-content-center min-vw-100">
-                              <img src="assets/img/food/salsa-omelet.JPG" alt="Salsa Topped Omelet"/>
-                          </div>
-                      </div>
-                      <div class="carousel-item" id="slide4">
-                          <div class="d-flex align-items-center justify-content-center min-vw-100">
-                              <img src="assets/img/food/mushroom-steak.JPG" alt="Mother's Day Special: London Steak"/>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-              <a id="carousel-prev" class="carousel-control-prev" href="#hero-carousel" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-              </a>
-              <a id="carousel-next" class="carousel-control-next" href="#hero-carousel" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-              </a>
-
-            </div>
-
 
           </div>
 
@@ -127,20 +98,17 @@
         <section class="hero-image-row container text-center center mb-4">
         <!-- Food/About images used to open the lightbox -->
             <div class="row text-center center circle-food-row">
-              <div class="col-lg-1 col-md-1 col hide-on-sm"></div>
-              <div class="col-lg-2 col-md-2 col-3 text-center clip-circle-container">
+              <div class="col-lg-3 col-md-3 col hide-on-sm"></div>
+              <div class="col-lg-2 col-md-2 col-4 text-center clip-circle-container">
                 <img src="assets/img/food/avo-omelet.jpeg" onclick="chooseImg1()" class="hover-shadow initial-images clip-circle" id="thumbslide1">
               </div>
-              <div class="col-lg-2 col-md-2 col-3 text-center clip-circle-container">
+              <div class="col-lg-2 col-md-2 col-4 text-center clip-circle-container">
                 <img src="assets/img/food/salsa-omelet.JPG" onclick="chooseImg2()" class="hover-shadow initial-images clip-circle" id="thumbslide2">
               </div>
-              <div class="col-lg-2 col-md-2 col-3 text-center clip-circle-container" id="thumbslide-container-3">
+              <div class="col-lg-2 col-md-2 col-4 text-center clip-circle-container">
                 <img src="assets/img/food/friedchicken-waffle.JPG" onclick="chooseImg3()" class="hover-shadow initial-images clip-circle"  id="thumbslide3">
               </div>
-              <div class="col-lg-2 col-md-2 col-3 text-center clip-circle-container" id="thumbslide-container-4">
-                <img src="assets/img/food/mushroom-steak.JPG" onclick="chooseImg4()" class="hover-shadow initial-images clip-circle"  id="thumbslide4">
-              </div>
-              <div class="col-lg-1 col-md-1 col hide-on-sm"></div>
+              <div class="col-lg-3 col-md-3 col hide-on-sm"></div>
               <!-- <div class="col-lg-2 col text-center clip-circle-container">
                 <img src="assets/img/other/fambam.JPG" onclick="openModalFood();currentSlideFood(4)" class="hover-shadow initial-images clip-circle">
               </div>
