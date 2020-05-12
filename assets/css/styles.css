@@ -11,6 +11,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
+  --white: #fff;
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -21,7 +22,6 @@
   --green: #28a745;
   --teal: #980f61;
   --cyan: #17a2b8;
-  --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
   --primary: #980f61;
@@ -67,6 +67,7 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
+  max-width:100vw !important;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -5830,6 +5831,13 @@ a.close.disabled {
           backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
 }
+
+#thumbslide1:hover, 
+#thumbslide2:hover,
+#thumbslide3:hover {
+  cursor:pointer;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
     transition: none;
@@ -6065,6 +6073,10 @@ a.close.disabled {
 
 .align-text-top {
   vertical-align: text-top !important;
+}
+
+.bg-white {
+  background-color:white;
 }
 
 .bg-primary {
@@ -10155,7 +10167,39 @@ h3 {
 .masthead {
   padding-top: calc(6rem);
   padding-bottom: 6rem;
-  /*background: white url('assets/img/food/avo-omelet.jpeg') center/cover no-repeat scroll;*/
+}
+#carousel-container {
+  max-width:100vw !important;
+  overflow-x:hidden !important;
+}
+#hero-carousel {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index:-500;
+  max-height:700px;
+  overflow:hidden;
+  max-width:100vw !important;
+}
+/*.carousel-item img {
+  min-width:100%;
+  height:auto;
+}*/
+/*#slide1 div {
+  height:100%;
+  width:100%;*/
+  /*background: white url('assets/img/food/avo-omelet.jpeg') center no-repeat scroll;*/
+/*}*/
+
+#carousel-prev, #carousel-next {
+  top:180px !important;
+  z-index:50;
+}
+#carousel-prev {
+  left:0;
+}
+#carousel-next {
+  right:0;
 }
 .masthead .masthead-heading {
   font-size: 2.75rem;
@@ -10169,14 +10213,153 @@ h3 {
   transition-property:ease-in-out;
   transition-duration: 2s;
 }
+.hero-image-row {
+  position:absolute;
+  top:650px;
+  margin:0 auto;
+  min-width:100vw;
+}
+/*.circle-food-row div {
+  background-color:#FFF;
+}*/
+.carousel-item {
+  background-color:#FFF;
+}
+
+/* HERO CAROUSEL MEDIA QUERIES */
+@media (min-width: 1500px) {
+  .carousel-item img {
+    margin-top:-300px;
+  }
+}
+@media (min-width: 1200px) {
+  .carousel-item img {
+    margin-top:-60px;
+    min-width:100vw;
+  }
+  .masthead .masthead-avatar {
+    height: 350px;
+  }
+  #about {
+    margin-top:40px;
+  }
+  .hide-on-sm {
+    display:inline-block;
+  }
+  .circle-food-row {
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #hero-carousel {
+    max-height:630px;
+  }
+  .carousel-item img {
+    margin-top:-60px;
+    min-width:100vw;
+  }
+  .hero-image-row {
+    top:570px;
+  }
+  #about {
+    margin-top:30px;
+  }
+  .masthead .masthead-avatar {
+    height: 300px;
+  }
+  .hide-on-sm {
+    display:inline-block;
+  }
+  .circle-food-row {
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #hero-carousel {
+    max-height:630px;
+  }
+  .carousel-item img {
+    margin-left:-60px;
+  }
+  .hero-image-row {
+    top:570px;
+  }
+  #about {
+    margin-top:-20px;
+  }
+  .masthead .masthead-avatar {
+    height: 350px;
+  }
+  .hide-on-sm {
+    display:inline-block;
+  }
+  .circle-food-row {
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  #hero-carousel {
+    max-height:630px;
+  }
+  .carousel-item img {
+    margin-left:-74px;
+    max-height:630px;
+  }
+  .hero-image-row {
+    top:570px;
+  }
+  #about {
+    margin-top:50px;
+  }
+  .masthead .masthead-avatar {
+    height: 300px;
+  }
+  .circle-food-row {
+    align-items: center;
+    justify-content: center;
+  }
+  .hide-on-sm {
+    display:none;
+  }
+}
+@media (max-width: 575px) {
+  #hero-carousel {
+    max-height:630px;
+  }
+  .carousel-item img {
+    margin-left:-160px !important;
+    max-height:630px;
+  }
+  .hero-image-row {
+    top:570px;
+  }
+  #about {
+    margin-top:50px;
+  }
+  .masthead .masthead-avatar {
+    height: 300px;
+  }
+  .circle-food-row {
+    align-items: center;
+    justify-content: center;
+  }
+  .hide-on-sm {
+    display:none;
+  }
+}
+
+
+
+
+
 
 @media (min-width: 992px) {
   .masthead {
     padding-top: calc(6rem + 104px);
     padding-bottom: 6rem;
-  }
-  .masthead .masthead-avatar {
-    height: 30vw;
   }
   .masthead .masthead-heading {
     font-size: 4rem;
@@ -10190,11 +10373,6 @@ h3 {
   }
   .hide-lg-up {
     display:none;
-  }
-}
-@media (max-width:566px) {
-  .masthead .masthead-avatar {
-    height: 60vw;
   }
 }
 /*.portfolio .portfolio-item {
@@ -10241,6 +10419,7 @@ h3 {
   opacity: 1;
 }*/
 
+/* below large */
 @media (max-width: 991px) {
   .about-left {
     border-top: 0.125rem solid rgba(152,15,97,0.9);

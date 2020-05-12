@@ -12,9 +12,9 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="assets/css/styles.css" rel="stylesheet" />
         <!-- Custom CSS -->
-        <link href="css/lightbox-modal.css" rel="stylesheet" />
+        <link href="assets/css/lightbox-modal.css" rel="stylesheet" />
         <!-- Favicon -->
         <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"/>
     </head>
@@ -38,37 +38,78 @@
                 </div>
             </div>
         </nav>
-        <!-- Masthead Logo -->
+        <!-- Masthead Hero -->
         <header class="masthead text-center mt-lg-n5">
            <!-- style="background:white url('assets/img/food/avo-omelet.jpeg') center/cover no-repeat scroll;" -->
-            <div class="container d-flex align-items-center flex-column">
+           <!-- IMAGE SLIDER -->
+            <div id="carousel-container" class="px-0">
+              <div id="hero-carousel" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner bg-info" role="listbox">
+                      <div class="carousel-item active" id="slide1">
+                          <div class="d-flex align-items-center justify-content-center min-vw-100">
+                              <img src="assets/img/food/avo-omelet.jpeg" alt="Avocado Topped Omelet"/>
+                          </div>
+                      </div>
+                      <div class="carousel-item" id="slide2">
+                          <div class="d-flex align-items-center justify-content-center min-vw-100">
+                              <img src="assets/img/food/salsa-omelet.JPG" alt="Salsa Topped Omelet"/>
+                          </div>
+                      </div>
+                      <div class="carousel-item" id="slide3">
+                          <div class="d-flex align-items-center justify-content-center min-vw-100">
+                              <img src="assets/img/food/friedchicken-waffle.JPG" alt="Fried Chicken and Waffles"/>
+                          </div>
+                      </div>
+                      <!-- <div class="carousel-item">
+                          <div class="d-flex align-items-center justify-content-center min-vw-100">
+                              <img src="assets/img/food/medit-omelet.jpg" alt="Mediterranean Omelet"/>
+                          </div>
+                      </div> -->
+                  </div>
+              </div>
 
-              <!-- ALERT DIV -->
-                <div class="border-90-secondary p-3 mb-3">
-                  Temporarily closed due to shelter in place.
-                  <br/>Please check our 
-                  <a href="https://facebook.com/milsdiner" target="_blank">Facebook</a> and/or 
-                  <a href="https://www.instagram.com/milsdiner" target="_blank">Instagram</a> for updates.
-                </div>
-                <!-- -->
-
-                <img class="masthead-avatar" src="assets/img/menu-logo-transparent-circle.png" alt="Mil's Diner Main Logo" />
+              <a id="carousel-prev" class="carousel-control-prev" href="#hero-carousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a id="carousel-next" class="carousel-control-next" href="#hero-carousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
             </div>
+
+          </div>
+
+          <div class="container d-flex align-items-center flex-column">
+
+            <!-- ALERT DIV -->
+              <div class="border-90-secondary p-3 mb-3 bg-white">
+                Temporarily closed due to shelter in place.
+                <br/>Please check our 
+                <a href="https://facebook.com/milsdiner" target="_blank">Facebook</a> and/or 
+                <a href="https://www.instagram.com/milsdiner" target="_blank">Instagram</a> for updates.
+              </div>
+              <!-- -->
+
+              <img class="masthead-avatar" src="assets/img/menu-logo-transparent-circle.png" alt="Mil's Diner Main Logo" />
+          </div>
         </header>
-        <!-- Pretty Pictures -->
-        <section class="hero-image-row container text-center center mb-4 mt-n5">
+
+        <section class="hero-image-row container text-center center mb-4">
         <!-- Food/About images used to open the lightbox -->
             <div class="row text-center center circle-food-row">
-              <div class="col-lg-2 col column text-center clip-circle-container">
-                <img src="assets/img/food/avo-omelet.jpeg" onclick="openModalFood();currentSlideFood(1)" class="hover-shadow initial-images clip-circle">
+              <div class="col-lg-3 col-md-3 col hide-on-sm"></div>
+              <div class="col-lg-2 col-md-2 col-4 text-center clip-circle-container">
+                <img src="assets/img/food/avo-omelet.jpeg" onclick="chooseImg1()" class="hover-shadow initial-images clip-circle" id="thumbslide1">
               </div>
-              <div class="col-lg-2 col column text-center clip-circle-container">
-                <img src="assets/img/food/friedchicken-waffle.JPG" onclick="openModalFood();currentSlideFood(2)" class="hover-shadow initial-images clip-circle">
+              <div class="col-lg-2 col-md-2 col-4 text-center clip-circle-container">
+                <img src="assets/img/food/salsa-omelet.JPG" onclick="chooseImg2()" class="hover-shadow initial-images clip-circle" id="thumbslide2">
               </div>
-              <div class="col-lg-2 col column text-center clip-circle-container">
-                <img src="assets/img/food/salsa-omelet.JPG" onclick="openModalFood();currentSlideFood(3)" class="hover-shadow initial-images clip-circle">
+              <div class="col-lg-2 col-md-2 col-4 text-center clip-circle-container">
+                <img src="assets/img/food/friedchicken-waffle.JPG" onclick="chooseImg3()" class="hover-shadow initial-images clip-circle"  id="thumbslide3">
               </div>
-              <div class="col-lg-2 col column text-center clip-circle-container">
+              <div class="col-lg-3 col-md-3 col hide-on-sm"></div>
+              <!-- <div class="col-lg-2 col text-center clip-circle-container">
                 <img src="assets/img/other/fambam.JPG" onclick="openModalFood();currentSlideFood(4)" class="hover-shadow initial-images clip-circle">
               </div>
               <div class="col-lg-2 col column text-center clip-circle-container">
@@ -76,84 +117,12 @@
               </div>
               <div class="col-lg-2 col column text-center clip-circle-container">
                 <img src="assets/img/other/awards-lineup.JPG" onclick="openModalFood();currentSlideFood(6)" class="hover-shadow initial-images clip-circle">
-              </div>
+              </div> -->
             </div>
-            <!-- Food/About Modal/Lightbox -->
-            <div id="myModalFood" class="modal">
-              <span class="close cursor" onmousedown="closeModalFood()">&times;</span>
-              <div class="modal-content">
+          </section>
 
-                <div class="mySlidesFood text-center">
-                  <div class="numbertext">1 / 6</div>
-                  <img src="assets/img/food/avo-omelet.jpeg" class="large-slides clipped-slides">
-                </div>
-
-                <div class="mySlidesFood text-center">
-                  <div class="numbertext">2 / 6</div>
-                  <img src="assets/img/food/friedchicken-waffle.JPG" class="large-slides clipped-slides">
-                </div>
-
-                <div class="mySlidesFood text-center">
-                  <div class="numbertext">3 / 6</div>
-                  <img src="assets/img/food/salsa-omelet.JPG" class="large-slides clipped-slides">
-                </div>
-
-                <div class="mySlidesFood text-center">
-                  <div class="numbertext">4 / 6</div>
-                  <img src="assets/img/other/fambam.JPG" class="large-slides clipped-slides">
-                </div>
-
-                <div class="mySlidesFood text-center">
-                  <div class="numbertext">5 / 6</div>
-                  <img src="assets/img/other/newspaper.JPG" class="large-slides clipped-slides">
-                </div>
-
-                <div class="mySlidesFood text-center">
-                  <div class="numbertext">6 / 6</div>
-                  <img src="assets/img/other/awards-lineup.JPG" class="large-slides clipped-slides">
-                </div>
-
-                <!-- Next/previous controls -->
-                <a class="prev" onclick="plusSlidesFood(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlidesFood(1)">&#10095;</a>
-
-                <!-- Caption text -->
-                <div class="caption-container">
-                  <p id="caption"></p>
-                </div>
-
-                <!-- Food/About thumbnail image controls -->
-                <div class="row text-center center">
-                    <div class="col-xs-2 col thumbnails-col column">
-                      <img class="thumbnails demo clip-square" src="assets/img/food/avo-omelet.jpeg" onclick="currentSlideFood(1)" alt="Avocado Topped Omelet and Hashbrowns">
-                    </div>
-
-                    <div class="col-xs-2 col thumbnails-col column">
-                      <img class="thumbnails demo clip-square" src="assets/img/food/friedchicken-waffle.JPG" onclick="currentSlideFood(2)" alt="Chicken and Waffles">
-                    </div>
-
-                    <div class="col-xs-2 col thumbnails-col column">
-                      <img class="thumbnails demo clip-square" src="assets/img/food/salsa-omelet.JPG" onclick="currentSlideFood(3)" alt="Salsa Topped Omelet and Potatoes">
-                    </div>
-
-                    <div class="col-xs-2 col thumbnails-col column">
-                      <img class="thumbnails portrait demo clip-square" src="assets/img/other/fambam.JPG" onclick="currentSlideFood(4)" alt="Mil's Diner Family: The Perivoliotis">
-                    </div>
-
-                    <div class="col-xs-2 col thumbnails-col column">
-                      <img class="thumbnails portrait demo clip-square" src="assets/img/other/newspaper.JPG" onclick="currentSlideFood(5)" alt="Newspaper Clipping">
-                    </div>
-
-                    <div class="col-xs-2 col thumbnails-col column">
-                      <img class="thumbnails demo clip-square" src="assets/img/other/awards-lineup.JPG" onclick="currentSlideFood(6)" alt="A Small Portion of the Awards Lineup">
-                    </div>
-                </div>
-
-              </div>
-            </div>
-        </section>
         <!-- About Section-->
-        <section class="page-section mb-0 mt-n4" id="about">
+        <section class="page-section mb-0" id="about">
             <div class="container">
                 <!-- About Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-4">About</h2>
@@ -379,13 +348,10 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
         <!-- Third party plugin JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Contact form JS-->
-        <script src="assets/mail/jqBootstrapValidation.js"></script>
-        <script src="assets/mail/contact_me.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <script src="assets/js/scripts.js"></script>
         <!-- Custom JS-->
-        <script src="js/lightbox-modal.js"></script>
-        
+        <script src="assets/js/lightbox-modal.js"></script>
+        <script src="assets/js/custom.js"></script>
     </body>
 </html>
