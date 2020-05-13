@@ -10192,8 +10192,9 @@ h3 {
 /*}*/
 
 #carousel-prev, #carousel-next {
-  top:180px !important;
-  z-index:50;
+  /*top:180px !important;
+  z-index:50;*/
+  display:none !important;
 }
 #carousel-prev {
   left:0;
