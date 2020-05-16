@@ -10227,6 +10227,9 @@ h3 {
 
 /* HERO CAROUSEL MEDIA QUERIES */
 @media (min-width: 1200px) {
+  body {
+    overflow-x:hidden;
+  }
   #body-container {
     border-left: 1px solid #980f61;
     border-right: 1px solid #980f61;
