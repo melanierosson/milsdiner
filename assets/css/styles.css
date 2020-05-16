@@ -10385,10 +10385,18 @@ h3 {
   #carousel-next {
     opacity:0;
   }
+  .menu-col {
+    margin:0 auto;
+    padding:0 !important;
+    width:auto;
+  }
 }
 @media (max-width: 399px) {
   .carousel-item img {
     margin-left:-80px !important;
+  }
+  .menu-col, .initial-images {
+      width:180px !important;
   }
 }
 
