@@ -10227,13 +10227,20 @@ h3 {
 
 /* HERO CAROUSEL MEDIA QUERIES */
 @media (min-width: 1200px) {
+  #body-container {
+    border-left: 1px solid #980f61;
+    border-right: 1px solid #980f61;
+  }
   #body-container,
   .navbar,
   .masthead,
   .page-section,
   .copyright { 
     max-width:1200px !important;
-    margin:0 auto !important;
+    margin:0 auto;
+  }
+  .navbar {
+    padding-right:1px;
   }
   .container,
   #carousel-container,
@@ -10244,6 +10251,9 @@ h3 {
   }
   .carousel-item {
     max-width:1200px !important;
+  }
+  .carousel-inner {
+    margin-left:-1px;
   }
   .hero-content {
     margin-top:-60px;
@@ -10258,7 +10268,7 @@ h3 {
     height: 350px;
   }
   #about {
-    margin-top:40px;
+    margin-top:80px;
   }
   .hide-on-sm {
     display:inline-block;
