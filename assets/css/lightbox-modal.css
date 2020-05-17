@@ -122,20 +122,37 @@
       -ms-transform: translate(-50%,-50%);
           transform: translate(-50%,-50%);
 }
-img.clip-circle::before {
+.clip-circle-container span {
   content:'';
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: 100%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  transition: 0.3s;
+  z-index:0;
   background-color:#FFF;
-  width:100%;
-  height:100%;
-  clip-path: circle(64px at center);;
+  clip-path: circle(64px at center);
+  opacity:1;
 }
 .clip-circle {
   clip-path: circle(64px at center);
   width:200px;
 }
+/*.clip-circle::before {
+  content:'';
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color:#FFF;
+  width:200px;
+  height:200px;
+  clip-path: circle(64px at center);
+  opacity:1;
+}*/
 .clip-square {
   width:20%;
 }
@@ -152,6 +169,10 @@ img.clip-circle::before {
     overflow:hidden;
     margin-top:5px;
     margin-bottom:5px;
+  }
+  .clip-circle-container span {
+    clip-path: circle(40px at center);
+    width:100px;
   }
   .clip-circle {
     clip-path: circle(40px at center);
