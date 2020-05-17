@@ -18,12 +18,16 @@
   position: fixed;
   z-index: 1;
   padding-top: 100px;
-  left: 0;
   top: 14px;
   width: 100%;
+  max-width:1200px;
   height: auto;
   overflow: auto;
   background-color: rgba(0,0,0,0.7);
+  margin-left:auto;
+  margin-right:auto;
+  left: 0;
+  right: 0;
 }
 #myModalMenu, #myModalFood {
   padding-bottom:15px;
