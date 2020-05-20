@@ -79,7 +79,8 @@
 }
 .thumbnails-col {
   position: relative;
-  height: 15vh;
+  height: 13vh;
+  padding-bottom:10px;
 }
 @media (max-width: 575px) {
   .thumbnails-col {
@@ -87,25 +88,6 @@
     height: 10vh;
   }
 }
-/*.thumbnails-col img {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  height: 100%;
-  width: auto;
-  -webkit-transform: translate(-50%,-50%);
-      -ms-transform: translate(-50%,-50%);
-          transform: translate(-50%,-50%);
-}*/
-/*.thumbnails-col img.portrait {
-  width: 100%;
-  height: auto;
-}*/
-
-/*.thumbnails-col-menu, .thumbnails-col-special {
-  height:15vh !important;
-  width:auto;
-}*/
 .flex-center {
   align-items: center;
   justify-content: center;
