@@ -85,7 +85,7 @@
 @media (max-width: 575px) {
   .thumbnails-col {
     position: relative;
-    height: 10vh;
+    height: 7vh;
   }
 }
 .flex-center {
