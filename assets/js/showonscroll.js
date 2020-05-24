@@ -29,21 +29,21 @@ window.addEventListener('scroll', function() {
             rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
         );
     }
-    var modal = document.getElementById('myModalMenu');
-    var modalIsVisible = window.getComputedStyle(modal, null).getPropertyValue('display');
+    // var modal = document.getElementById('myModalMenu');
+    // var modalIsVisible = window.getComputedStyle(modal, null).getPropertyValue('display');
     // loop through elements for animation
     function loop() {
 
         elementsToShow.forEach(function (element) {
-            if (modalIsVisible == 'none') {
+            // if (modalIsVisible == 'none') {
                 if (isElementInViewport(element)) {
                         element.classList.add('is-visible');
                 } else {
                     element.classList.remove('is-visible');
                 }
-            } else {
-                element.classList.add('is-visible');
-            }
+            // } else {
+            //     element.classList.add('is-visible');
+            // }
         });
       
         scroll(loop);

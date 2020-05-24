@@ -15,6 +15,7 @@
         <link href="assets/css/styles.css" rel="stylesheet" />
         <!-- Custom CSS -->
         <link href="assets/css/lightbox-modal.css" rel="stylesheet" />
+        <link href="assets/css/animations.css" rel="stylesheet" />
         <!-- Favicon -->
         <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"/>
     </head>
@@ -125,7 +126,7 @@
           </section>
 
         <!-- About Section-->
-        <section class="page-section mb-0 bg-white" id="about">
+        <section class="page-section mb-0 bg-white show-on-scroll" id="about">
             <div class="container">
                 <!-- About Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-4">About</h2>
@@ -145,7 +146,7 @@
             </div>
         </section>
         <!-- Menu Section-->
-        <section class="page-section menu mt-n4" id="menu">
+        <section class="page-section menu mt-n4 show-on-scroll" id="menu">
             <div class="container">
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-5">Menu</h2>
 
@@ -179,91 +180,91 @@
                     <img src="assets/img/menus/specials2.jpg" onclick="openModalMenu();currentSlideMenu(7)" class="hover-shadow initial-images">
                   </div>
                 </div>
-                <!-- Menu Modal/Lightbox -->
-                <div id="myModalMenu" class="modal">
-                  <span class="close cursor" onclick="closeModalMenu()">&times;</span>
-                  <div class="modal-content">
-                    <!-- <div class="row"> -->
-                      <div class="mySlidesMenu text-center">
-                        <div class="numbertext">1 / 7</div>
-                        <a href="assets/img/menus/menu1.jpg" target="_blank"><img src="assets/img/menus/menu1.jpg" class="large-slides"></a>
-                      </div>
-
-                      <div class="mySlidesMenu text-center">
-                        <div class="numbertext">2 / 7</div>
-                        <a href="assets/img/menus/menu2.jpg" target="_blank"><img src="assets/img/menus/menu2.jpg" class="large-slides"></a>
-                      </div>
-
-                      <div class="mySlidesMenu text-center">
-                        <div class="numbertext">3 / 7</div>
-                        <a href="assets/img/menus/menu3.jpg" target="_blank"><img src="assets/img/menus/menu3.jpg" class="large-slides"></a>
-                      </div>
-
-                      <div class="mySlidesMenu text-center">
-                        <div class="numbertext">4 / 7</div>
-                        <a href="assets/img/menus/menu4.jpg" target="_blank"><img src="assets/img/menus/menu4.jpg" class="large-slides"></a>
-                      </div>
-
-                      <div class="mySlidesMenu text-center">
-                        <div class="numbertext">5 / 7</div>
-                        <a href="assets/img/menus/specials3.jpg" target="_blank"><img src="assets/img/menus/specials3.jpg" class="large-slides"></a>
-                      </div>
-
-                      <div class="mySlidesMenu text-center">
-                        <div class="numbertext">6 / 7</div>
-                        <a href="assets/img/menus/specials1.jpg" target="_blank"><img src="assets/img/menus/specials1.jpg" class="large-slides"></a>
-                      </div>
-
-                      <div class="mySlidesMenu text-center">
-                        <div class="numbertext">7 / 7</div>
-                        <a href="assets/img/menus/specials2.jpg" target="_blank"><img src="assets/img/menus/specials2.jpg" class="large-slides"></a>
-                      </div>
-                    <!-- </div> -->
-
-                    <!-- Next/previous controls -->
-                    <a class="prev" onclick="plusSlidesMenu(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlidesMenu(1)">&#10095;</a>
-
-                    <!-- Caption text -->
-                    <div class="caption-container">
-                      <p id="caption"></p>
-                    </div>
-
-                    <!-- Menu thumbnail image controls -->
-                    <div class="row flex-center">
-                      <div class="thumbnails-col column">
-                        <img class="thumbnails demo" src="assets/img/menus/menu1.jpg" onclick="currentSlideMenu(1)" alt="Menu Cover">
-                      </div>
-
-                      <div class="thumbnails-col column">
-                        <img class="thumbnails demo" src="assets/img/menus/menu2.jpg" onclick="currentSlideMenu(2)" alt="Lunch and Sides">
-                      </div>
-
-                      <div class="thumbnails-col column">
-                        <img class="thumbnails demo" src="assets/img/menus/menu3.jpg" onclick="currentSlideMenu(3)" alt="Breakfast and Children's Meals">
-                      </div>
-
-                      <div class="thumbnails-col column">
-                        <img class="thumbnails demo" src="assets/img/menus/menu4.jpg" onclick="currentSlideMenu(4)" alt="All Day Breakfast">
-                      </div>
-
-                      <div class="thumbnails-col column">
-                        <img class="thumbnails demo" src="assets/img/menus/specials3.jpg" onclick="currentSlideMenu(5)" alt="Breakfast Specials">
-                      </div>
-
-                      <div class="thumbnails-col column">
-                        <img class="thumbnails demo" src="assets/img/menus/specials1.jpg" onclick="currentSlideMenu(6)" alt="Lunch Specials">
-                      </div>
-
-                      <div class="thumbnails-col column">
-                        <img class="thumbnails demo" src="assets/img/menus/specials2.jpg" onclick="currentSlideMenu(7)" alt="Weekend Specials">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                    
             </div>
         </section>
+
+        <!-- Menu Modal/Lightbox -->
+        <div id="myModalMenu" class="modal">
+          <span class="close cursor" onclick="closeModalMenu()">&times;</span>
+          <div class="modal-content">
+            <!-- <div class="row"> -->
+              <div class="mySlidesMenu text-center">
+                <div class="numbertext">1 / 7</div>
+                <a href="assets/img/menus/menu1.jpg" target="_blank"><img src="assets/img/menus/menu1.jpg" class="large-slides"></a>
+              </div>
+
+              <div class="mySlidesMenu text-center">
+                <div class="numbertext">2 / 7</div>
+                <a href="assets/img/menus/menu2.jpg" target="_blank"><img src="assets/img/menus/menu2.jpg" class="large-slides"></a>
+              </div>
+
+              <div class="mySlidesMenu text-center">
+                <div class="numbertext">3 / 7</div>
+                <a href="assets/img/menus/menu3.jpg" target="_blank"><img src="assets/img/menus/menu3.jpg" class="large-slides"></a>
+              </div>
+
+              <div class="mySlidesMenu text-center">
+                <div class="numbertext">4 / 7</div>
+                <a href="assets/img/menus/menu4.jpg" target="_blank"><img src="assets/img/menus/menu4.jpg" class="large-slides"></a>
+              </div>
+
+              <div class="mySlidesMenu text-center">
+                <div class="numbertext">5 / 7</div>
+                <a href="assets/img/menus/specials3.jpg" target="_blank"><img src="assets/img/menus/specials3.jpg" class="large-slides"></a>
+              </div>
+
+              <div class="mySlidesMenu text-center">
+                <div class="numbertext">6 / 7</div>
+                <a href="assets/img/menus/specials1.jpg" target="_blank"><img src="assets/img/menus/specials1.jpg" class="large-slides"></a>
+              </div>
+
+              <div class="mySlidesMenu text-center">
+                <div class="numbertext">7 / 7</div>
+                <a href="assets/img/menus/specials2.jpg" target="_blank"><img src="assets/img/menus/specials2.jpg" class="large-slides"></a>
+              </div>
+            <!-- </div> -->
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlidesMenu(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlidesMenu(1)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+
+            <!-- Menu thumbnail image controls -->
+            <div class="row flex-center">
+              <div class="thumbnails-col column">
+                <img class="thumbnails demo" src="assets/img/menus/menu1.jpg" onclick="currentSlideMenu(1)" alt="Menu Cover">
+              </div>
+
+              <div class="thumbnails-col column">
+                <img class="thumbnails demo" src="assets/img/menus/menu2.jpg" onclick="currentSlideMenu(2)" alt="Lunch and Sides">
+              </div>
+
+              <div class="thumbnails-col column">
+                <img class="thumbnails demo" src="assets/img/menus/menu3.jpg" onclick="currentSlideMenu(3)" alt="Breakfast and Children's Meals">
+              </div>
+
+              <div class="thumbnails-col column">
+                <img class="thumbnails demo" src="assets/img/menus/menu4.jpg" onclick="currentSlideMenu(4)" alt="All Day Breakfast">
+              </div>
+
+              <div class="thumbnails-col column">
+                <img class="thumbnails demo" src="assets/img/menus/specials3.jpg" onclick="currentSlideMenu(5)" alt="Breakfast Specials">
+              </div>
+
+              <div class="thumbnails-col column">
+                <img class="thumbnails demo" src="assets/img/menus/specials1.jpg" onclick="currentSlideMenu(6)" alt="Lunch Specials">
+              </div>
+
+              <div class="thumbnails-col column">
+                <img class="thumbnails demo" src="assets/img/menus/specials2.jpg" onclick="currentSlideMenu(7)" alt="Weekend Specials">
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- Awards Section-->
        <!--  <section class="page-section mb-0" id="awards">
             <div class="container">
@@ -272,7 +273,7 @@
             </div>
         </section> -->
         <!-- Contact Section-->
-        <section class="page-section mb-0 mt-n4" id="contact">
+        <section class="page-section mb-0 mt-n4 show-on-scroll" id="contact">
             <div class="container">
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-5">Contact</h2>
                 <div class="row">
@@ -358,6 +359,7 @@
         <script src="assets/js/scripts.js"></script>
         <!-- Custom JS-->
         <script src="assets/js/lightbox-modal.js"></script>
+        <script src="assets/js/showonscroll.js"></script>
         <script src="assets/js/custom.js"></script>
       </div>
     </body>
