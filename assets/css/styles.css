@@ -10126,7 +10126,17 @@ h3 {
   font-size: 80%;
   padding: 0.8rem;
 }
-
+@media (max-width: 991px) {
+  #mainNav .navbar-nav li.nav-item a.nav-link {
+    padding-left:10px;
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
+    color: white;
+    background-color:#980f61;
+    border-top: none;
+    border-radius:0.5rem;
+  }
+}
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 1.5rem;
