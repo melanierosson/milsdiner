@@ -4,6 +4,9 @@
 #awards {
     margin-top:100px;
 }
+#awards p.awards-text {
+    padding-top:20px;
+}
 #awards img {
   width: 100%;
 }
