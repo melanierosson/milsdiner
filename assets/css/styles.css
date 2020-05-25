@@ -6100,9 +6100,9 @@ button.hamburger-bordered {
 a.hamburger-bordered:hover, a.hamburger-bordered:focus,
 button.hamburger-bordered:hover,
 button.hamburger-bordered:focus {
-  color: #fff;
-  background-color:rgba(152, 15, 97, 0.7);
-  border: 2px solid #0e216d;
+  color: #9f106a;
+  /* background-color:rgba(152, 15, 97, 0.1); */
+  border: 2px solid #9f106a;
 }
 
 .bg-secondary {
@@ -10131,10 +10131,10 @@ h3 {
     padding-left:10px;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
-    color: white;
-    background-color:rgba(152, 15, 97, 0.7);
-    border-top: none;
-    border-radius:0.5rem;
+    color: #9f106a;
+    background-color:rgba(152, 15, 97, 0.1);
+    border-top:none;
+    /* border-radius:0.5rem; */
   }
 }
 @media (min-width: 992px) {
