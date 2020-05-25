@@ -3942,11 +3942,11 @@ input[type=button].btn-block {
 .nav-pills .nav-link {
   border-radius: 0.5rem;
 }
-.nav-pills .nav-link.active,
+/* .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
   background-color: #9f106a;
-}
+} */
 
 .nav-fill .nav-item {
   flex: 1 1 auto;
@@ -10119,7 +10119,7 @@ h3 {
   margin-top:-2px;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
-  color: #0e216d;
+  color: #9f106a;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
   color: #9f106a;
@@ -10149,7 +10149,8 @@ h3 {
     font-size: 1.75em;
     transition: font-size 0.3s;
   }
-  #mainNav .navbar-brand:hover {
+  #mainNav .navbar-brand:hover,
+  #mainNav .navbar-brand:active {
     color:#9f106a;
     border-top: 2px solid #0e216d;
     border-bottom:2px solid #0e216d;
