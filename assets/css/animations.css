@@ -1,9 +1,4 @@
-#about.show-on-scroll,
-#menu .menu-header.show-on-scroll,
-#menu .menu-first-row.show-on-scroll,
-#menu .menu-second-row.show-on-scroll,
-#contact .contact-first-row.show-on-scroll,
-#contact .contact-second-row.show-on-scroll {
+#page-top #body-container .show-on-scroll {
     opacity: 0;
     transform: translateY(10rem); 
     -moz-transition: transform 1s, opacity 0.6s ease-in-out;
@@ -12,12 +7,7 @@
     transition: transform 1s, opacity 0.6s ease-in-out;
     will-change: transform, opacity;
 }
-#about.show-on-scroll.is-visible,
-#menu .menu-header.show-on-scroll.is-visible,
-#menu .menu-first-row.show-on-scroll.is-visible,
-#menu .menu-second-row.show-on-scroll.is-visible,
-#contact .contact-first-row.show-on-scroll.is-visible,
-#contact .contact-second-row.show-on-scroll.is-visible {
+#page-top #body-container .show-on-scroll.is-visible {
     opacity: 1;
     transform: translateY(1rem); 
 }
