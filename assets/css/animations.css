@@ -9,7 +9,7 @@
 }
 #page-top #body-container .show-on-scroll.is-visible {
     opacity: 1;
-    transform: translateY(1rem); 
+    transform: translateY(0rem); 
 }
 
 #awards img.awards-img.show-on-scroll {
