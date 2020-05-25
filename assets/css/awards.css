@@ -1,0 +1,37 @@
+#awards * {
+	box-sizing: border-box;
+}
+#awards {
+    margin-top:100px;
+}
+#awards img {
+  width: 100%;
+}
+#awards article {
+  padding: 1px;
+  /* border: 1px solid #999;
+  border-radius: 5px; */
+  background: #fff;
+}
+#awards a:link,
+#awards a:visited {
+  color: black;
+}
+#awards h1 {
+    margin-top: 0;
+    margin-left: 0.75rem;
+}
+#awards main {
+	columns: 250px;
+	column-gap: 20px; 
+}
+#awards article {
+	break-inside: avoid-column;
+	margin-bottom: 1rem; 
+}
+@media (max-width:575px) {
+    #awards main {
+        columns: 45%;
+        column-gap: 3%; 
+    }
+}
