@@ -137,6 +137,7 @@ var loadIt = function() {
 };
 
 window.onload = loadIt();
+window.onload = preloadImage();
 
 // scroll animation
 window.addEventListener('scroll', loadIt);
