@@ -25,3 +25,7 @@
     opacity: 1;
     transform: translateY(1rem); 
 }
+.no-animate {
+    opacity: 1;
+    transform: none;
+}

@@ -18,6 +18,8 @@
         <link href="assets/css/animations.css" rel="stylesheet" />
         <!-- Favicon -->
         <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"/>
+        <!-- Animations -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body id="page-top">
       <div id="body-container">
@@ -84,7 +86,7 @@
           <div class="container d-flex align-items-center flex-column hero-content">
 
             <!-- ALERT DIV -->
-              <div class="border-90-secondary p-3 mb-3 bg-white">
+              <div class="border-90-secondary p-3 mb-3 bg-white" data-aos="fade-in" data-aos-duration="4000">
                 Dining area is closed due to COVID-19, but takeout is available.
                 <br/>Please check our 
                 <a href="https://facebook.com/milsdiner" target="_blank">Facebook</a> and/or 
@@ -92,7 +94,7 @@
               </div>
               <!-- -->
 
-              <img class="masthead-avatar" src="assets/img/menu-logo-transparent-circle.png" alt="Mil's Diner Main Logo" />
+              <img class="masthead-avatar" src="assets/img/menu-logo-transparent-circle.png" data-aos="fade-in"  data-aos-duration="4000" alt="Mil's Diner Main Logo" />
           </div>
         </header>
 
@@ -129,9 +131,9 @@
         <section class="page-section mb-0 bg-white" id="about">
             <div class="container">
                 <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-4 show-on-scroll">About</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-4" data-aos="fade-up" data-aos-duration="5000">About</h2>
                 <!-- About Section Content-->
-                <div class="row show-on-scroll">
+                <div class="row" data-aos="fade-up" data-aos-duration="5000">
                     <div class="col-lg-4 ml-auto about-left pt-3">
                         <p class="lead">
                             Mil's Diner has been a staple for South Bay Area brunch enthusiasts for over 20 years. With their focus on quality food and maintaining an enjoyable family atmosphere, it is a prime spot to have a relaxing meal in the morning or afternoon.
@@ -149,7 +151,7 @@
         <!-- Menu Section-->
         <section class="page-section menu mt-n4" id="menu">
             <div class="container">
-              <div class="menu-header show-on-scroll">
+              <div class="menu-header" data-aos="fade-up" data-aos-duration="5000">
                 <!-- MENU TITLE -->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-5">Menu</h2>
 
@@ -160,28 +162,28 @@
                 <!-- --> 
               </div>
                 <!-- Menu images used to open the lightbox -->
-                <div class="row text-center center menu-first-row">
-                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 column text-center menu-col show-on-scroll">
+                <div class="row text-center center menu-first-row" data-aos="fade-up" data-aos-duration="5000">
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 column text-center menu-col">
                     <img src="assets/img/menus/menu1.jpg" onclick="openModalMenu();currentSlideMenu(1)" class="hover-shadow initial-images">
                   </div>
-                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 column text-center menu-col show-on-scroll">
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 column text-center menu-col">
                     <img src="assets/img/menus/menu2.jpg" onclick="openModalMenu();currentSlideMenu(2)" class="hover-shadow initial-images">
                   </div>
-                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 column text-center menu-col show-on-scroll">
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 column text-center menu-col">
                     <img src="assets/img/menus/menu3.jpg" onclick="openModalMenu();currentSlideMenu(3)" class="hover-shadow initial-images">
                   </div>
-                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 column text-center menu-col show-on-scroll">
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 column text-center menu-col">
                     <img src="assets/img/menus/menu4.jpg" onclick="openModalMenu();currentSlideMenu(4)" class="hover-shadow initial-images">
                   </div>
                 </div>
-                <div class="row text-center center menu-second-row show-on-scroll">
-                  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 column text-center menu-col show-on-scroll">
+                <div class="row text-center center menu-second-row" data-aos="fade-up" data-aos-duration="5000">
+                  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 column text-center menu-col">
                     <img src="assets/img/menus/specials3.jpg" onclick="openModalMenu();currentSlideMenu(5)" class="hover-shadow initial-images">
                   </div>
-                  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 column text-center menu-col show-on-scroll">
+                  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 column text-center menu-col">
                     <img src="assets/img/menus/specials1.jpg" onclick="openModalMenu();currentSlideMenu(6)" class="hover-shadow initial-images">
                   </div>
-                  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 column text-center menu-col show-on-scroll">
+                  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 column text-center menu-col">
                     <img src="assets/img/menus/specials2.jpg" onclick="openModalMenu();currentSlideMenu(7)" class="hover-shadow initial-images">
                   </div>
                 </div>
@@ -274,27 +276,27 @@
         <!-- Contact Section-->
         <section class="page-section mb-0 mt-n4" id="contact">
             <div class="container">
-              <div class="contact-first-row">
-                <h2 class="page-section-heading text-center text-uppercase text-secondary show-on-scroll mb-5">Contact</h2>
+              <div class="contact-first-row" data-aos="fade-up" data-aos-duration="5000">
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-5">Contact</h2>
                 <div class="row">
-                    <div class="col-sm-12 mx-auto show-on-scroll">
+                    <div class="col-sm-12 mx-auto">
                         <h3 class="text-80-primary text-center text-uppercase mb-3">Hours</h3>
                     </div>
                 </div>
                 <div class="row mt-4">
-                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mb-5 mb-lg-0 text-center show-on-scroll show-on-scroll">
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mb-5 mb-lg-0 text-center">
                         <div class="border-90-secondary contact-boxes py-4">
                             <h4 class="text-uppercase mb-4">Sunday</h4>
                             <p class="lead mb-0">7:00 am - 3:00 pm</p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mb-5 mb-lg-0 text-center show-on-scroll">
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mb-5 mb-lg-0 text-center">
                         <div class="border-90-secondary contact-boxes py-4">
                             <h4 class="text-uppercase mb-4">Monday - Friday</h4>
                             <p class="lead mb-0">5:30 am - 3:00 pm</p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center show-on-scroll">
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
                         <div class="border-90-secondary contact-boxes py-4">
                             <h4 class="text-uppercase mb-4">Saturday</h4>
                             <p class="lead mb-0">6:00 am - 3:00 pm</p>
@@ -307,16 +309,16 @@
                     </div>
                 </div>
               </div>
-              <div class="contact-second-row">
+              <div class="contact-second-row" data-aos="fade-up" data-aos-duration="5000">
                   <div class="row">
-                      <div class="col-sm-12 mx-auto show-on-scroll">
+                      <div class="col-sm-12 mx-auto">
                           <h3 class="text-80-primary text-center text-uppercase mb-3">
                               Details
                           </h3>
                       </div>
                   </div>
                   <div class="row mt-4">
-                      <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mb-5 mb-lg-0 text-center show-on-scroll">
+                      <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mb-5 mb-lg-0 text-center">
                           <div class="border-90-secondary contact-boxes py-3" id="location">
                               <h4 class="text-uppercase mb-4">Location</h4>
                               <p class="lead mb-0">
@@ -327,7 +329,7 @@
                               </p>
                           </div>
                       </div>
-                      <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mb-5 mb-lg-0 text-center show-on-scroll">
+                      <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mb-5 mb-lg-0 text-center">
                           <div class="border-90-secondary contact-boxes py-3">
                               <h4 class="text-uppercase mb-4">Follow</h4>
                               <a class="btn btn-outline-light btn-social mx-1" href="https://facebook.com/milsdiner" target="_blank"><i class="fab fa-fw fa-facebook-f"></i></a>
@@ -335,7 +337,7 @@
                               <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/milsdiner" target="_blank"><i class="fab fa-fw fa-instagram"></i></a>
                           </div>
                       </div>
-                      <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center show-on-scroll">
+                      <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
                           <div class="border-90-secondary contact-boxes py-3" id="phone">
                               <h4 class="text-uppercase mb-4">Phone/Email</h4>
                               <p class="lead mb-0">
@@ -367,8 +369,12 @@
         <script src="assets/js/scripts.js"></script>
         <!-- Custom JS-->
         <script src="assets/js/lightbox-modal.js"></script>
-        <script src="assets/js/showonloadscroll.js"></script>
         <script src="assets/js/custom.js"></script>
+        <!-- Animations -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
       </div>
     </body>
 </html>
