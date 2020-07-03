@@ -3950,6 +3950,7 @@ input[type=button].btn-block {
 
 .nav-fill .nav-item {
   flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
   text-align: center;
 }
 
@@ -3968,6 +3969,10 @@ input[type=button].btn-block {
 
 .navbar {
   position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -3980,6 +3985,10 @@ input[type=button].btn-block {
 .navbar .container-md,
 .navbar .container-lg,
 .navbar .container-xl {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -3999,6 +4008,10 @@ input[type=button].btn-block {
 }
 
 .navbar-nav {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   padding-left: 0;
