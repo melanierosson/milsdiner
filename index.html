@@ -381,7 +381,7 @@
         </section>
         <!-- Copyright Section-->
         <section class="copyright py-4 text-center text-uppercase">
-            <div class="container"><small>© MIL'S DINER 2020 &nbsp; | &nbsp; <a href="http://melpowheard.com" target="_blank">melpowheard</a></small></div>
+            <div class="container"><small>© MIL'S DINER <span id="currentYear"></span> &nbsp; | &nbsp; <a href="http://mpowheard.com" target="_blank">mpowheard</a></small></div>
         </section>
         <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
         <div class="scroll-to-top d-lg-none position-fixed">
@@ -401,8 +401,11 @@
         <script src="assets/js/custom.js"></script>
         <!-- Animations -->
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <!-- copyright year -->
         <script>
           AOS.init();
+          var year = new Date().getFullYear();
+          document.getElementById('currentYear').innerText = year;
         </script>
       </div>
     </body>

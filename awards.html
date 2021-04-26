@@ -49,7 +49,7 @@
 
     <section id="awards">
         <p class="text-center awards-text">
-            Mil's Diner won <a href="http://www.bestofmilpitas.com/?page_id=132" target="_blank">Best of Milpitas Breakfast</a> for the 25th year in a row in 2019!
+            Mil's Diner won <a href="http://www.bestofmilpitas.com/?page_id=132" target="_blank">Best of Milpitas Breakfast</a> for over 25+ years in a row!
             <br/>
             <small>We've won so many awards that we lost a few.</small>
         </p>
@@ -153,7 +153,7 @@
         
         <!-- Copyright Section-->
         <section class="copyright py-4 text-center text-uppercase">
-            <div class="container"><small>© MIL'S DINER 2020 &nbsp; | &nbsp; <a href="http://melpowheard.com" target="_blank">melpowheard</a></small></div>
+            <div class="container"><small>© MIL'S DINER <span id="currentYear"></span> &nbsp; | &nbsp; <a href="http://mpowheard.com" target="_blank">mpowheard</a></small></div>
         </section>
         <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
         <div class="scroll-to-top d-lg-none position-fixed">
@@ -176,6 +176,8 @@
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
           AOS.init();
+          const year = new Date().getFullYear();
+          document.getElementById('currentYear').innerText = year;
         </script>
       </div>
     </body>
