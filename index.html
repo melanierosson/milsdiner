@@ -14,6 +14,7 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="assets/css/styles.css" rel="stylesheet" />
         <!-- Custom CSS -->
+        <link href="assets/css/preloader.css" rel="stylesheet" />
         <link href="assets/css/lightbox-modal.css" rel="stylesheet" />
         <link href="assets/css/animations.css" rel="stylesheet" />
         <!-- Favicon -->
@@ -22,6 +23,14 @@
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body id="page-top">
+
+      <!-- Preloader -->
+      <div id="load-wrapper">
+        <div class="cssload-box-loading">
+        </div>
+      </div>
+      <!-- -->
+
       <div id="body-container">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bottom-border bg-white text-uppercase fixed-top" id="mainNav">
@@ -377,11 +386,17 @@
         <script src="assets/js/custom.js"></script>
         <!-- Animations -->
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <!-- copyright year -->
+        <!-- Copyright Year -->
         <script>
           AOS.init();
           var year = new Date().getFullYear();
           document.getElementById('currentYear').innerText = year;
+        </script>
+        <!-- Preloader Animation -->
+        <script>
+          $(window).on("load",function(){
+            $("#load-wrapper").fadeOut()
+          });
         </script>
       </div>
     </body>

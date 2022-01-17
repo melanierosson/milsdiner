@@ -69,6 +69,9 @@
   height:auto;
   margin:auto auto;
 }
+.initial-images:hover {
+  cursor: pointer;
+}
 .large-slides {
   max-height:65vh;
   margin: 0 auto;
