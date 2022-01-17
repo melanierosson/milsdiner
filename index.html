@@ -21,6 +21,107 @@
         <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"/>
         <!-- Animations -->
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- Schema -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Restaurant",
+          "image": "https://milsdiner.com/assets/img/menu-logo-transparent-circle.png",
+          "@id": "https://milsdiner.com",
+          "name": "Mil's Diner",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "36 South Abbott Avenue",
+            "addressLocality": "Milpitas",
+            "addressRegion": "CA",
+            "postalCode": "95035",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 35.7629078,
+            "longitude": -120.7947625
+          },
+          "url": "https://milsdiner.com",
+          "telephone": "+14089464773",
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Sunday",
+                "Saturday"
+              ],
+              "opens": "07:00",
+              "closes": "15:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
+              "opens": "07:00",
+              "closes": "14:00"
+            }
+          ],
+          "servesCuisine":[
+            "American cuisine"
+          ],
+          "hasMenu":{
+            "@type":"Menu",
+            "name":"Menus",
+            "description":"Menu for dine-in or take-out.",
+            "hasMenuSection":[
+            {
+              "@type":"MenuSection",
+              "name":"Dinner",
+              "description":"Dinner dishes",
+              "image":"https://thisisarestaurant.com/dinner_dishes.jpg",
+              "offers":{
+                 "@type":"Offer",
+                 "availabilityEnds":"T15:00:00",
+                 "availabilityStarts":"T7:00:00"
+              }
+            },
+            {
+              "@type":"MenuSection",
+              "name":"Breakfast",
+              "description":"Breakfast and brunch items such as omelettes",
+              "image":"https://milsdiner.com/assets/img/menus/menu2.jpg",
+              "offers":{
+                 "@type":"Offer",
+                 "availabilityEnds":"T15:00:00",
+                 "availabilityStarts":"T7:00:00"
+              }
+            },
+            {
+              "@type":"MenuSection",
+              "name":"More Breakfast & Kid's Menu",
+              "description":"More Breakfast & Children's Items",
+              "image":"https://milsdiner.com/assets/img/menus/menu3.jpg",
+              "offers":{
+                 "@type":"Offer",
+                 "availabilityEnds":"T15:00:00",
+                 "availabilityStarts":"T7:00:00"
+              }
+            },
+            {
+              "@type":"MenuSection",
+              "name":"Lunch",
+              "description":"Lunch items served after 11:00 a.m.",
+              "image":"https://milsdiner.com/assets/img/menus/menu4.jpg",
+              "offers":{
+                 "@type":"Offer",
+                 "availabilityEnds":"T15:00:00",
+                 "availabilityStarts":"T11:00:00"
+              }
+            }
+          ]}
+        }
+        </script>
     </head>
     <body id="page-top">
 
